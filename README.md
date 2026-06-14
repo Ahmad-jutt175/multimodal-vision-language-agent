@@ -80,7 +80,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📋 Resume Bullet Points
+## Bullet Points
 
 - Developed a **hybrid Multi-Modal AI framework** combining Computer Vision and NLP for autonomous scene understanding
 - Integrated pre-trained **Vision-Language Transformers (BLIP architecture)** via Hugging Face and PyTorch for image captioning and Visual Question Answering (VQA)
