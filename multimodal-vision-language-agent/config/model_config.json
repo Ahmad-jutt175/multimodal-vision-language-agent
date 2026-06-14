@@ -1,0 +1,20 @@
+{
+  "model_name": "Salesforce/blip-image-captioning-large",
+  "vqa_model_name": "Salesforce/blip-vqa-base",
+  "max_new_tokens": 100,
+  "num_beams": 5,
+  "min_length": 5,
+  "top_p": 0.9,
+  "repetition_penalty": 1.5,
+  "device": "auto",
+  "dataset_reference": {
+    "name": "Flickr8k",
+    "source": "https://www.kaggle.com/datasets/adityajn105/flickr8k",
+    "description": "8000 images with 5 human-annotated captions each — industry standard for image captioning benchmarking"
+  },
+  "benchmark_reference": {
+    "name": "COCO 2017",
+    "source": "https://www.kaggle.com/datasets/awsaf49/coco-2017-dataset",
+    "description": "Microsoft COCO dataset — 330K images with dense captions and object annotations"
+  }
+}

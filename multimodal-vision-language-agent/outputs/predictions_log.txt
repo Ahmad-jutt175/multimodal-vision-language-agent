@@ -1,0 +1,45 @@
+=================================================================
+  MULTI-MODAL AI AGENT — INFERENCE LOG
+=================================================================
+Timestamp       : 2026-06-14 05:31:53
+Device          : CPU
+Caption Model   : Salesforce/blip-image-captioning-large
+VQA Model       : Salesforce/blip-vqa-base
+Image Path      : ../data\sample_scene.jpg
+Resolution      : 2048 x 1365 pixels
+Dataset Ref     : Flickr8k
+Kaggle Source   : https://www.kaggle.com/datasets/adityajn105/flickr8k
+─────────────────────────────────────────────────────────────────
+
+[TASK 1] UNCONDITIONAL IMAGE CAPTIONING
+Output : there is a woman and a dog on the beach playing with each other
+
+[TASK 2] CONDITIONAL CAPTIONING (MULTI-MODAL FUSION)
+  Context 1 Prompt : "a photograph of"
+  Context 1 Output : a photograph of a woman petting a dog on the beach
+
+  Context 2 Prompt : "the scene shows"
+  Context 2 Output : the scene shows a woman and her dog on the beach
+
+  Context 3 Prompt : "this image contains"
+  Context 3 Output : this image contains a woman and a dog on the beach
+
+[TASK 3] VISUAL QUESTION ANSWERING (VQA)
+  Q1: What is happening in this image?
+  A1: woman and dog at beach
+
+  Q2: What time of day does it appear to be?
+  A2: sunset
+
+  Q3: How many people are visible?
+  A3: one
+
+  Q4: Is this indoors or outdoors?
+  A4: outdoors
+
+  Q5: What is the main subject of this image?
+  A5: dog and woman
+
+=================================================================
+STATUS: SUCCESS — All 3 tasks completed
+=================================================================
